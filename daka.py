@@ -6,7 +6,7 @@ import time
 
 def send_message(message):
     # WebHook地址
-    webhook = 'https://oapi.dingtalk.com/robot/send?access_token=c832267a88fc358ad068e256e6b66e34eb21e0131eb89ce0a0ea781ef5838238'
+    webhook = '{Webhook 地址}'  # 在{Webhook 地址}填入钉钉的Webhook 地址
     # 初始化机器人
     xiaoding = DingtalkChatbot(webhook)
     # 当前时间
