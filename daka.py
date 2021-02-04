@@ -5,6 +5,8 @@ import time
 
 
 def send_message(message):
+    """和钉钉关联起来，给钉钉的群发消息"""
+
     # WebHook地址
     webhook = '{Webhook 地址}'  # 在{Webhook 地址}填入钉钉的Webhook 地址
     # 初始化机器人
