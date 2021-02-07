@@ -1,5 +1,7 @@
 # 给钉钉发送通知
-
+"""
+这段代码下发给钉钉的消息太单一了
+"""
 from dingtalkchatbot.chatbot import DingtalkChatbot
 import time
 

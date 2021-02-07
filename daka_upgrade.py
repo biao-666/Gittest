@@ -1,4 +1,7 @@
 # 给钉钉发送通知
+"""
+这段代码的执行有个缺陷，就是只能在某一个时间内运行
+"""
 
 from dingtalkchatbot.chatbot import DingtalkChatbot
 import time
