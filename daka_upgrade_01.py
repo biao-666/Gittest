@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 # 当前时间
 # now_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())  # time.localtime()：计算机当地时间
 now_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-
+now_date_time = datetime.now().strftime('%Y-%m-%d')
 
 def send_message(message):
     """和钉钉关联起来，给钉钉的群发消息"""
@@ -23,10 +23,10 @@ def send_message(message):
     xiaoding.send_text(msg='滴滴滴：' + message + now_time_print, is_at_all=True)
 
 add_time_list = {
-    'add_time_print1': datetime.now().strftime('%Y-%m-%d') + ' 09:05:00',
-    'add_time_print2': datetime.now().strftime('%Y-%m-%d') + ' 12:35:00',
-    'add_time_print3': datetime.now().strftime('%Y-%m-%d') + ' 14:05:00',
-    'add_time_print4': datetime.now().strftime('%Y-%m-%d') + ' 18:15:00',
+    'add_time_print1': now_date_time + ' 09:05:00',
+    'add_time_print2': now_date_time + ' 12:35:00',
+    'add_time_print3': now_date_time + ' 14:05:00',
+    'add_time_print4': now_date_time + ' 18:15:00',
 }
 
 def adddate_time(what_hour):
